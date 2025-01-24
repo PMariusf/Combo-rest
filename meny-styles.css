@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+  }
+html, body {/*dont tuch*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 0em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo_img {
+  height: 13vh;
+  min-height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5em;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 0.5em;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+  
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #d40000;
+}
+/*navbar end*/
+/*____________________________________________________________________________________________________________________________________________________________________*/
+
+ 
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 668px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5em;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('/bilder/smoke-background\ \(2\).jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+/*bekvitt under etterpå*/
+.content-section {
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 50vh;
+  border-bottom: 1px solid #ffffff;
+  max-width: 200px; /* Constrain the width */
+  margin: 0 auto;   /* Center the section */
+}
+.content-section:last-child {
+  border-bottom: none;
+}
+/*_____________________________________________________________________________________________________________________________________*/
+h2{
+  margin-top: 30px;
+} 
+h2:first-of-type{
+  margin-top: 0px;
+}
+.mI{
+  display: flex;
+  width: 50%;
+  justify-self: center;
+  justify-content: space-between;
+  border-bottom: dotted #131313;
+}
+.mI p{
+  margin-bottom: -5px;
+  border-bottom: 7px solid #ffffff;
+  z-index: 10000;
+}
+@media (max-width: 668px) {
+  .mI{
+    width: 90%;
+  }
+}
+  /*-------------------------------------------------------------------------------------------------------------------------------*/
+  /*_______________________________________________________________________________________________________________________________*/
+  .popup {
+    background-color: red;
+    width:100%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 90vw;
+    height: 100vh;
+    background-color: #ffffff83;
+    color: #131313;
+    text-align: center;
+    border-radius: 6px;
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(/bilder/borderformeny.png) 30% stretch;
+    border-image-slice: 69 80 61 76;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 5vw;
+    top: 00%;
+    left: 0vw;
+  }
+  h1{
+    translate:0 -30px;
+  }
+  
+  /* Toggle the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.2s;
+    animation: fadeIn 0.2s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

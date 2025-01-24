@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('/bilder/smoke-background\ \(2\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;  
+}
+  
+  /* Navbar */
+  
+.navbar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 0em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo_img {
+  height: 13vh;
+  min-height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5em;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 0.5em;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 668px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5em;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+.Headline {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em; 
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 800px; 
+  text-transform:capitalize;
+  letter-spacing: 5px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Sections */
+
+.content-section {
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  max-width: 60%; 
+  margin: 0 auto;
+}
+.content-section:last-child {
+  border-bottom: none;
+}
+  
+p a {
+  color: #ffffff;
+}
+ p a:link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+p a:visited {
+  color: white;
+}
+p a:hover {
+  color: #00bcd4;
+}
+
+
+/* Footer */
+footer {
+  background-color: rgba(30, 30, 30, 0.9);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Responsiveness */
+/*@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }*/
+
+  .content-section {
+    padding: 50px 20px;
+  }

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/bilder/smoke-background (2).jpg') no-repeat center center/cover;
+  }
+  
+  header {
+    font-family: "Italianno", serif;
+    font-weight: bold;
+    font-size: 1.5em; 
+    padding: 10px;
+    background-color: rgba(18, 18, 18, 0.8);
+  }
+  
+  .logo_img {
+    height: 13vh;
+    min-height: 50px;
+  }
+  
+  main {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  label, input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #008c9e;
+  }
+  
+  #orderResult {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #00bcd4;
+  }
+  
+  #returnHome {
+    background-color: #ff5722;
+  }
+  
+  #orderHistory {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #orderHistory li {
+    background: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    form, #orderHistory {
+        width: 90%;
+    }
+  }

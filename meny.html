@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Themed Page</title>
+    <link rel="stylesheet" href="meny-styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img class="logo_img" src="/bilder/Group 22.png" alt="Logo">
+        <ul>
+          <li><a href="/index.html">Hjem</a></li>
+          <li><a href="/om_oss.html">Om oss</a></li>
+          <li><a href="/" aria-current="page">Meny</a></li>
+          <li><a href="/order.html">Order</a></li>
+          <li><a href="/Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1" class="content-section">beskrivelse + råvarer + selvlagingsmetode equipment</section><!--hvorfor vises ikke denne????????????????????-->
+      <div class="popup" onclick="popupM()"><p> sideretter og drikke</p>
+        <span class="popuptext" id="myPopup">
+          <h1>Side Meny</h1>
+          <h2>Sideretter</h2>
+          <div class="mI"><p>item</p><p>pris</p></div>
+          <div class="mI"><p>itofasjfdsjfjsfem</p><p>pris</p></div>
+          <div class="mI"><p>itofasf</p><p>pris</p></div>
+          <h2>Tapas</h2> 
+          <div class="mI"></div>
+          <h2>sauser og dipp</h2>
+          <div class="mI"></div>
+          <h2>Drikker</h2> 
+          <div class="mI"></div>
+          <h2>Desser</h2>
+          <div class="mI"></div>
+          <div class='topMB'> </div>
+          <div class='M.I.C'> </div>
+           </span>
+      </div>
+      <section id="section2" class="content-section">main retter</section>
+      <section id="section3" class="content-section">forretter</section><!--prob obselite med hvordan resturant gimmiken virker-->
+      <section id="section4" class="content-section">deserer</section>
+    </main> 
+    <footer>
+      <p>© 2025 Your Website. All Rights Reserved.</p>
+    </footer>
+    <script>//ser ut til å kunn virke i script tag
+    function popupM() {
+      const popup = document.getElementById("myPopup");
+      console.log('button virker')
+      popup.classList.toggle("show");
+    }
+    </script>
+  </body>
+</html>
